@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop - Resumo do Pedido</title>
+    <link rel="stylesheet" href="fim.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header>
+            <h1>Coffee Shop</h1>
+            <h2>Resumo do Pedido</h2>
+        </header>
+
+        <!-- Resumo do Pedido -->
+        <div class="order-summary">
+            <h3>Itens do Pedido</h3>
+            <ul id="order-items">
+                <!-- Itens do pedido serão inseridos aqui dinamicamente -->
+            </ul>
+            <p><strong>Total:</strong> R$ <span id="order-total">0.00</span></p>
+            <p><strong>Forma de Pagamento:</strong> <span id="payment-method"></span></p>
+            <p><strong>Data e Hora do Pedido:</strong> <span id="order-time"></span></p>
+
+            <!-- Botões para Salvar como PDF e Novo Pedido -->
+            <div class="buttons">
+                <button id="save-pdf">Salvar como PDF</button>
+                <button id="new-order">Novo Pedido</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="fim.js"></script>
+</body>
+</html>

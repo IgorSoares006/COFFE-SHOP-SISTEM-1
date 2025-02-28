@@ -1,0 +1,104 @@
+/* Cabeçalho */
+.header {
+    background-color: #5d4037;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #ff7043;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #ff5722;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('cafe-background.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Ajusta para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #d17b2e; /* Cor personalizada para a cafeteria */
+}
+
+header h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.order-summary {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-summary h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.order-summary ul {
+    list-style: none;
+    padding: 0;
+}
+
+.order-summary li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#save-pdf, #new-order {
+    background-color: #d17b2e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 48%;
+}
+
+#save-pdf:hover, #new-order:hover {
+    background-color: #b5631c;
+}

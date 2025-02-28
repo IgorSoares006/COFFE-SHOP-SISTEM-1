@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe shop - login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="carousel">
+        <div class="carousel-images">
+            <img src="login/coffe1.jpg" class="active">
+            <img src="login/coffe2.jpg">
+            <img src="login/coffe3.jpg">
+        </div>
+    </div>
+
+    <div class="login-container">
+        <h1 class="logo">COFFE SHOP</h1>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Usuário</label>
+            <input type="text" id="username" required>
+
+            <label for="password">Senha</label>
+            <div class="password-container">
+                <input type="password" id="password" required>
+                <span class="toggle-password" onclick="togglePassword()">👁️</span>
+            </div>
+
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>Criado Por: <strong>Igor Soares</strong> | <a href="https://www.instagram.com/igul_soares/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/seunome" target="_blank">Facebook</a></p>
+    </footer>
+
+
+    <script src="login.js"></script>
+</body>
+
+
+</html>
+

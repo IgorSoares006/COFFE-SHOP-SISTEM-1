@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finalizar Pedido</title>
+    <link rel="stylesheet" href="finalizar.css">
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <h1>COFFE SHOP</h1>
+        <button id="logout-btn" class="logout-btn">Sair</button>
+
+    </header>
+    <div class="container">
+        <div class="payment-methods">
+            <h2>Formas de Pagamento</h2>
+            <div class="payment-option">
+                <img src="icons/dinheiro.png" alt="Dinheiro" class="payment-icon">
+                <span>Dinheiro</span>
+            </div>
+            <div class="payment-option">
+                <img src="icons/cartao.png" alt="Cartão" class="payment-icon">
+                <span>Cartão</span>
+            </div>
+            <div class="payment-option">
+                <img src="icons/pix.png" alt="Pix" class="payment-icon">
+                <span>Pix</span>
+            </div>
+        </div>
+
+        <div class="order-summary">
+            <h2>Resumo do Pedido</h2>
+            <ul id="order-items"></ul>
+            <div class="total">
+                <p>Total: R$ <span id="total-price">0.00</span></p>
+            </div>
+            <div class="delivery-fee">
+                <input type="checkbox" id="delivery-fee-checkbox">
+                <label for="delivery-fee-checkbox">Adicionar taxa de entrega (R$ 2,00)</label>
+            </div>
+            <button id="finalize-payment">Finalizar Pagamento</button>
+        </div>
+    </div>
+
+    <script src="finalizar.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffe Shop - Pedidos</title>
+    <link rel="stylesheet" href="pedidos.css">
+</head>
+<body>
+    <header class="header">
+        <h1>COFFE SHOP</h1>
+        <button id="logout-btn" class="logout-btn">Sair</button>
+
+    </header>
+
+    <div class="main-content">
+        <!-- Comanda à Esquerda -->
+<section class="comanda">
+    <h2>Comanda</h2>
+    <select id="comanda-select" onchange="atualizarTaxa()">
+        <option value="mesa1">Mesa 1</option>
+        <option value="mesa2">Mesa 2</option>
+        <option value="balcao">Balcão</option>
+        <option value="entrega">Entrega</option>
+    </select>
+</section>
+
+        <!-- Menu de Produtos no Centro -->
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="product-list">
+                <!-- Café Expresso -->
+                <div class="product" data-name="Café Expresso" data-price="5.00">
+                    <img src="produtos/produto1.jpg" alt="Café Expresso">
+                    <h3>Café Expresso</h3>
+                    <p>R$ 5.00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Cappuccino -->
+                <div class="product"  data-name="Cappuccino" data-price="7.00">
+                    <img src="produtos/produto2.jpg" alt="Cappuccino">
+                    <h3>Cappuccino</h3>
+                    <p>R$ 7,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Café com Leite -->
+                <div class="product" data-name="Café com Leite" data-price="6.00">
+                    <img src="produtos/produto3.jpg" alt="Café com Leite">
+                    <h3>Café com Leite</h3>
+                    <p>R$ 6,00</p>
+                    <button class="add-to-cart" >Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Bolo de Chocolate -->
+                <div class="product"  data-name="Bolo de Chocolate" data-price="8.00">
+                    <img src="produtos/produto4.jpg" alt="Bolo de Chocolate">
+                    <h3>Bolo de Chocolate</h3>
+                    <p>R$ 8,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Croissant -->
+                <div class="product" data-name="Croissant" data-price="6.50">
+                    <img src="produtos/produto5.jpg" alt="Croissant">
+                    <h3>Croissant</h3>
+                    <p>R$ 6,50</p>
+                    <button class="add-to-cart" >Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Pão de Queijo -->
+                <div class="product" data-name="Pão de Queijo" data-price="4.00">
+                    <img src="produtos/produto6.jpg" alt="Pão de Queijo">
+                    <h3>Pão de Queijo</h3>
+                    <p>R$ 4.00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Café Gelado -->
+                <div class="product"  data-name="Café Gelado" data-price="9.00">
+                    <img src="produtos/produto7.jpg" alt="Café Gelado">
+                    <h3>Café Gelado</h3>
+                    <p>R$ 9,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Smoothie de Frutas -->
+                <div class="product"  data-name="Smoothie de Frutas" data-price="10.00">
+                    <img src="produtos/produto8.jpg" alt="Smoothie de Frutas">
+                    <h3>Smoothie de Frutas</h3>
+                    <p>R$ 10,00</p>
+                    <button class="add-to-cart">Adicionar ao Carrinho</button>
+                </div>
+        
+                <!-- Suco Natural -->
+                <div class="product" data-name="Suco Natural" data-price="5.50">
+                    <img src="produtos/produto9.jpg" alt="Suco Natural">
+                    <h3>Suco Natural</h3>
+                    <p>R$ 5,50</p>
+                    <button class="add-to-cart" >Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+        
+
+        <!-- Carrinho à Direita -->
+        <section class="cart">
+            <h2>Carrinho</h2>
+            <ul id="cart-items">
+                <!-- Itens do carrinho serão listados aqui -->
+            </ul>
+            <p><strong>Total: R$ <span id="total-price">0.00</span></strong></p>
+            <button id="finalize-order">Finalizar Pedido</button>
+        </section>
+    </div>
+
+      <!-- Rodapé -->
+      <footer class="footer">
+        <p>Criado Por: <strong>Igor Soares</strong> | <a href="https://www.instagram.com/igul_soares/" target="_blank">Instagram</a> | <a href="https://www.facebook.com/seunome" target="_blank">Facebook</a></p>
+    </footer>
+    <script src="pedidos.js"></script>
+</body>
+</html>
